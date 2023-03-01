@@ -28,3 +28,29 @@ def compress(s):
       i+=1
       
     return compressed_string
+
+
+# two pointer:
+def compress(s):
+    s += '?'
+    i = 0
+    j = 0
+    result =''
+    
+    while j < len(s):
+      if s[i] == s[j]:
+        j += 1
+      else:
+        num = j - i
+        if num == 1:
+          result += s[i]
+          i = j
+        else:
+          result += str(num) + s[i]
+          i = j
+        j += 1
+      
+      
+    
+      
+    return result
