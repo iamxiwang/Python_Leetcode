@@ -20,3 +20,13 @@ def uncompress(s):
     return output
 
 print(uncompress("2c3a1t"))
+# test_00:
+# uncompress("2c3a1t") # -> 'ccaaat'
+# test_01:
+# uncompress("4s2b") # -> 'ssssbb'
+# test_02:
+# uncompress("2p1o5p") # -> 'ppoppppp'
+# test_03:
+# uncompress("3n12e2z") # -> 'nnneeeeeeeeeeeezz'
+# test_04:
+# uncompress("127y") # -> 'yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy'

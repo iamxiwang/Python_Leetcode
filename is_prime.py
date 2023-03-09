@@ -23,3 +23,9 @@ def is_prime(n):
             return False
     
     return True
+
+# is_prime(8) # -> False
+# test_07:
+# is_prime(25) # -> False
+# test_08:
+# is_prime(31) # -> True
