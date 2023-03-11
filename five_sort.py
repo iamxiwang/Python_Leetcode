@@ -41,3 +41,15 @@ def five_sort(nums):
         elif nums[i] != 5 and nums[j] == 5:
             j -= 1
     return nums
+
+def five_sort(nums):
+    i = 0
+    j = len(nums) -1 #last index
+    while i < j:
+        if nums[i] != 5:
+            i += 1
+        elif nums[j] == 5:
+            j -= 1
+        else:
+            nums[i], nums[j] = nums[j],nums[i]
+    return nums
