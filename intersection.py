@@ -26,3 +26,6 @@ def intersection(a, b):
     set_b = set(b)
     return [ x for x in set_a if x in set_b]
     
+def intersection(a, b):
+    return list(set(a).intersection(set(b)))
+
