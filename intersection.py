@@ -20,3 +20,9 @@ def intersection(a, b):
       if num in count_b:
         duplicate_ele.append(num)
     return duplicate_ele
+
+def intersection(a, b):
+    set_a = set(a)
+    set_b = set(b)
+    return [ x for x in set_a if x in set_b]
+    
