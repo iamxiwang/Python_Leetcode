@@ -48,3 +48,10 @@ d.next = e
 # 2 -> 8 -> 3 -> -1 -> 7
 print(sum_list(a))
  # 19
+
+
+#   recursion
+def sum_list(head):
+    if head is None:
+        return 0
+    return head.val + sum_list(head.next)
